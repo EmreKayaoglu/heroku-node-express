@@ -24,7 +24,8 @@ function getClientIp(req) {
  */
 
 exports.index = function (req, res) {
-  let obj = [{
+
+  res.end(JSON.stringify([{
     "slug": "we-conect",
     "title": "We-Conect Home page",
     "url": "https://www.we-conect.com/",
@@ -46,7 +47,5 @@ exports.index = function (req, res) {
     "title": "Google",
     "url": "https://www.google.de"
   }
-  ];
-
-  res.end(JSON.stringify(obj));
+  ]));
 };
