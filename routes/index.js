@@ -1,10 +1,10 @@
 function getClientIp(req) {
-  
+
   var ipAddress;
   // Amazon EC2 / Heroku workaround to get real client IP
-  var forwardedIpsStr = req.header('x-forwarded-for'); 
+  var forwardedIpsStr = req.header('x-forwarded-for');
   if (forwardedIpsStr) {
-    
+
     // 'x-forwarded-for' header may return multiple IP addresses in
     // the format: "client IP, proxy 1 IP, proxy 2 IP" so take the
     // the first one
@@ -23,28 +23,28 @@ function getClientIp(req) {
  * GET home page.
  */
 
-exports.index = function(req, res) {
-  res.end(`[{
-    "slug":"we-conect",
-    "title":"We-Conect Home page",
-    "url":"https://www.we-conect.com/",
+exports.index = function (req, res) {
+  res.end([{
+    "slug": "we-conect",
+    "title": "We-Conect Home page",
+    "url": "https://www.we-conect.com/",
     "children": [
-    {
-    " slug ":"live-events",
-    "title":"Live Event",
-    "url":"https://www.we-conect.com/liveevents",
-    } ,
-    {
-    " slug ":"digital-managed-events ",
-    "title":"Digital Managed Events ",
-    "url":"https://www.we-conect.com/l digital-managed-events ",
-    } 
+      {
+        " slug ": "live-events",
+        "title": "Live Event",
+        "url": "https://www.we-conect.com/liveevents",
+      },
+      {
+        " slug ": "digital-managed-events ",
+        "title": "Digital Managed Events ",
+        "url": "https://www.we-conect.com/l digital-managed-events ",
+      }
     ]
-   },
-    {
-    " slug ":"google",
-    "title":"Google",
-    "url":"https://www.google.de"
-   }
-   ]`);
+  },
+  {
+    " slug ": "google",
+    "title": "Google",
+    "url": "https://www.google.de"
+  }
+  ]);
 };
