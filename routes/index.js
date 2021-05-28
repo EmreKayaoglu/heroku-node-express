@@ -31,19 +31,19 @@ exports.index = function (req, res) {
     "url": "https://www.we-conect.com/",
     "children": [
       {
-        " slug ": "live-events",
+        "slug": "live-events",
         "title": "Live Event",
         "url": "https://www.we-conect.com/liveevents",
       },
       {
-        " slug ": "digital-managed-events ",
+        "slug": "digital-managed-events ",
         "title": "Digital Managed Events ",
         "url": "https://www.we-conect.com/l digital-managed-events ",
       }
     ]
   },
   {
-    " slug ": "google",
+    "slug": "google",
     "title": "Google",
     "url": "https://www.google.de"
   }
