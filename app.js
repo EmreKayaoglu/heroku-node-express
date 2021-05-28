@@ -5,13 +5,13 @@
 
 var express = require('express')
 , routes = require('./routes')
-, mongoose = require('mongoose')
+// , mongoose = require('mongoose')
 , bodyParser = require('body-parser')
 , methodOverride = require('method-override')
 , serveStatic = require('serve-static')
 , errorHandler = require('errorhandler');
 
-mongoose.connect(process.env.MONGOLAB_URI || "mongodb://localhost/mongo_test");
+// mongoose.connect(process.env.MONGOLAB_URI || "mongodb://localhost/mongo_test");
 
 var app = express(); //module.exports = express.createServer();
 
