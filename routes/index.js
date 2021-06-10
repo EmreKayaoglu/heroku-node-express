@@ -29,28 +29,33 @@ exports.index = function (req, res) {
     "slug": "we-conect",
     "title": "We-Conect Home page",
     "url": "https://www.we-conect.com/",
+    "color": "cyan",
     "children": [
       {
         "slug": "live-events",
         "title": "Live Event",
         "url": "https://www.we-conect.com/liveevents",
+        "color": "red"
       },
       {
         "slug": "digital-managed-events ",
         "title": "Digital Managed Events ",
         "url": "https://www.we-conect.com/l digital-managed-events ",
+        "color": "blue"
       }
     ]
   },
   {
     "slug": "google",
     "title": "Google",
-    "url": "https://www.google.de"
+    "url": "https://www.google.de",
+    "color": "green"
   },
   {
     "slug": "Home",
     "title": "Home",
-    "url": "https://www.we-conect.com/"
+    "url": "https://www.we-conect.com/",
+    "color": "yellow"
   }
   ]));
 };
