@@ -46,6 +46,11 @@ exports.index = function (req, res) {
     "slug": "google",
     "title": "Google",
     "url": "https://www.google.de"
+  },
+  {
+    "slug": "Home",
+    "title": "Home",
+    "url": "https://www.we-conect.com/"
   }
   ]));
 };
